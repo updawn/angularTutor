@@ -1,0 +1,20 @@
+<div class = "menuRow">
+  <button class="btn btn-group-toggle" (click)="addFish1()"> fish1 </button>
+  <button class="btn btn-group-toggle" (click)="addFish2()"> fish2 </button>
+  <button class="btn btn-group-toggle" (click)="addFish3()"> fish3 </button>
+</div>
+<div class = "menuRow">
+  <button class="btn btn-group-toggle" (click)="addFish4()"> fish4 </button>
+  <button class="btn btn-group-toggle" (click)="addFish5()"> fish5 </button>
+  <button class="btn btn-group-toggle" (click)="addFish6()"> fish6 </button>
+</div>
+
+<div class="informBoxBoarder"> Selected: {{ currselection }} </div>
+
+<div class = "menuRow">
+  <button class="btn btn-primary" (click)="getRecipe()" style="background-color: cyan; color: black"> getRecipe </button>
+  <button class="btn btn-primary" (click)="reset()" style="background-color: cyan; color: black"> reset </button>
+</div>
+
+
+<div *ngIf="isLogin" class="informBoxBoarder">  {{ dish }} </div>
